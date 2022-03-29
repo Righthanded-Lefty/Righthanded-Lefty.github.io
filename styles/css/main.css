@@ -749,7 +749,7 @@ article + article {
   padding-bottom: 22px;
   background-size: cover;
   background-position: center;
-  background-image: url("/public/img/banner/class-banner.png"); }
+  background-image: url("/images/banner/class-banner.png"); }
 
 .schedule .head {
   display: flex;
