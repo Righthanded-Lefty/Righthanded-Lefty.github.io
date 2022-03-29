@@ -22,7 +22,7 @@
 		<script src="/scripts/scroll.js"></script>
 		<div class="schedule header container">
 			<div class="contained">
-				<h1>schedule</h1>
+				<h1>开发日程</h1>
 			</div>
 		</div>
 
@@ -53,16 +53,16 @@
 			<div class="main">
 				<div class="head">
 					<div class="filters box">
-						<div class="switch" id="lec-filter" onclick="flipSwitch('lec')">lectures</div>
-						<div class="switch" id="oh-filter" onclick="flipSwitch('oh')">office hours</div>
-						<div class="switch" id="event-filter" onclick="flipSwitch('event')">events</div>
-						<div class="switch" id="milestone-filter" onclick="flipSwitch('milestone')">milestones</div>
+						<div class="switch" id="lec-filter" onclick="flipSwitch('lec')">一般研发</div>
+						<div class="switch" id="oh-filter" onclick="flipSwitch('oh')">会面讨论</div>
+						<div class="switch" id="event-filter" onclick="flipSwitch('event')">第三方</div>
+						<div class="switch" id="milestone-filter" onclick="flipSwitch('milestone')">里程碑</div>
 					</div>
 					<button id="export-btn" onclick="window.location='https://calendar.google.com/calendar/embed?src=rso5amnhq262e8r8k5p3c3oqeg%40group.calendar.google.com&amp;ctz=America%2FNew_York'">export</button>
 				</div>	
 
 				<div id="weekone"></div>
-				<div class="day milestone">
+				<div class="day lec milestone">
 					<h3 class="date">3月28日 星期一</h3>
 					<div class="milestone">
 						<div class="time">8:00AM</div>
@@ -72,15 +72,11 @@
 						<div class="room"></div>
 						<div class="resources"></div>
 					</div>
-				</div>
-
-				<div class="day lec lunch oh milestone ">
-					<h3 class="date">4月3日 星期日</h3>
 					<div class="lec">
-						<div class="time">11:00AM - 12:00PM</div>
+						<div class="time">9:00AM - 12:00PM</div>
 						<div class="name">
-							<span>W2: Static Catbook in React</span>
-							<div class="lecturer">Lecturer: Akshaj Kadaveru &amp;amp; Allen Ding</div>
+							<span>本研发时间表上线并启动维护</span>
+							<div class="lecturer">初定两周的开发任务，及主要历程碑1、2设定</div>
 						</div>
 						<div class="room">10-250</div>
 						<div class="resources">
@@ -92,26 +88,14 @@
 							</a>
 						</div>
 					</div>
-					<div class="lec">
-						<div class="time">02:00PM - 03:00PM</div>
-						<div class="name">
-							<span>W3: Build Feed Skeleton</span>
-							<div class="lecturer">Lecturer: Claire Cheng &amp;amp; Helen Lu</div>
-						</div>
-						<div class="room">10-250</div>
-						<div class="resources">
-							<a href="https://docs.google.com/presentation/d/1qTJOPjyIx__AeFHDgmpLvBk2fj9dEQluAl35nDFHZ1Q/edit?usp=sharing">
-								<i class="far fa-file-pdf"></i>
-							</a>
-							<a href="https://www.youtube.com/watch?v=CElrdn1Ix-s">
-								<i class="fab fa-youtube"></i>
-							</a>
-						</div>
-					</div>
+				</div>
+
+				<div class="day lec lunch oh milestone ">
+					<h3 class="date">4月3日 星期日</h3>
 					<div class="oh">
 						<div class="time">07:00PM - 09:00PM</div>
 						<div class="name">
-							<span>Office Hours</span>
+							<span>待讨论：评估指标录入方式（接口）与PDF诊断报告生成逻辑</span>
 						</div>
 						<div class="room">32-082</div>
 						<div class="resources"></div>
@@ -126,7 +110,7 @@
 					</div>
 				</div>	
 			</div>
-			
+
 		</div>
 
 	</body>
