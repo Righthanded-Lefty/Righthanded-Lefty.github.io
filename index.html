@@ -49,84 +49,86 @@
 					</ul>
 				</div>
 			</aside>
-		</div>
 
-		<div class="main">
-			<div class="head">
-				<div class="filters box">
-					<div class="switch" id="lec-filter" onclick="flipSwitch('lec')">lectures</div>
-					<div class="switch" id="oh-filter" onclick="flipSwitch('oh')">office hours</div>
-					<div class="switch" id="event-filter" onclick="flipSwitch('event')">events</div>
-					<div class="switch" id="milestone-filter" onclick="flipSwitch('milestone')">milestones</div>
-				</div>
-				<button id="export-btn" onclick="window.location='https://calendar.google.com/calendar/embed?src=rso5amnhq262e8r8k5p3c3oqeg%40group.calendar.google.com&amp;ctz=America%2FNew_York'">export</button>
-			</div>	
-
-			<div id="weekone"></div>
-			<div class="day milestone">
-				<h3 class="date">3月28日 星期一</h3>
-				<div class="milestone">
-					<div class="time">8:00AM</div>
-					<div class="name">
-						<span>准立项日</span>
+			<div class="main">
+				<div class="head">
+					<div class="filters box">
+						<div class="switch" id="lec-filter" onclick="flipSwitch('lec')">lectures</div>
+						<div class="switch" id="oh-filter" onclick="flipSwitch('oh')">office hours</div>
+						<div class="switch" id="event-filter" onclick="flipSwitch('event')">events</div>
+						<div class="switch" id="milestone-filter" onclick="flipSwitch('milestone')">milestones</div>
 					</div>
-					<div class="room"></div>
-					<div class="resources"></div>
+					<button id="export-btn" onclick="window.location='https://calendar.google.com/calendar/embed?src=rso5amnhq262e8r8k5p3c3oqeg%40group.calendar.google.com&amp;ctz=America%2FNew_York'">export</button>
+				</div>	
+
+				<div id="weekone"></div>
+				<div class="day milestone">
+					<h3 class="date">3月28日 星期一</h3>
+					<div class="milestone">
+						<div class="time">8:00AM</div>
+						<div class="name">
+							<span>准立项日</span>
+						</div>
+						<div class="room"></div>
+						<div class="resources"></div>
+					</div>
 				</div>
+
+				<div class="day lec lunch oh milestone ">
+					<h3 class="date">4月3日 星期日</h3>
+					<div class="lec">
+						<div class="time">11:00AM - 12:00PM</div>
+						<div class="name">
+							<span>W2: Static Catbook in React</span>
+							<div class="lecturer">Lecturer: Akshaj Kadaveru &amp;amp; Allen Ding</div>
+						</div>
+						<div class="room">10-250</div>
+						<div class="resources">
+							<a href="https://docs.google.com/presentation/d/1FY7ACT58YIP4OAMstNkilDLC3xKYfrWTE-RngCosHYA/edit?usp=sharing">
+								<i class="far fa-file-pdf"></i>
+							</a>
+							<a href="https://www.youtube.com/watch?v=c18sTH8wztw">
+								<i class="fab fa-youtube"></i>
+							</a>
+						</div>
+					</div>
+					<div class="lec">
+						<div class="time">02:00PM - 03:00PM</div>
+						<div class="name">
+							<span>W3: Build Feed Skeleton</span>
+							<div class="lecturer">Lecturer: Claire Cheng &amp;amp; Helen Lu</div>
+						</div>
+						<div class="room">10-250</div>
+						<div class="resources">
+							<a href="https://docs.google.com/presentation/d/1qTJOPjyIx__AeFHDgmpLvBk2fj9dEQluAl35nDFHZ1Q/edit?usp=sharing">
+								<i class="far fa-file-pdf"></i>
+							</a>
+							<a href="https://www.youtube.com/watch?v=CElrdn1Ix-s">
+								<i class="fab fa-youtube"></i>
+							</a>
+						</div>
+					</div>
+					<div class="oh">
+						<div class="time">07:00PM - 09:00PM</div>
+						<div class="name">
+							<span>Office Hours</span>
+						</div>
+						<div class="room">32-082</div>
+						<div class="resources"></div>
+					</div>
+					<div class="milestone">
+						<div class="time">11:59PM</div>
+						<div class="name">
+							<span>开发节点一 提交成果</span>
+						</div>
+						<div class="room"></div>
+						<div class="resources"></div>
+					</div>
+				</div>	
 			</div>
-
-			<div class="day lec lunch oh milestone ">
-				<h3 class="date">4月3日 星期日</h3>
-				<div class="lec">
-					<div class="time">11:00AM - 12:00PM</div>
-					<div class="name">
-						<span>W2: Static Catbook in React</span>
-						<div class="lecturer">Lecturer: Akshaj Kadaveru &amp;amp; Allen Ding</div>
-					</div>
-					<div class="room">10-250</div>
-					<div class="resources">
-						<a href="https://docs.google.com/presentation/d/1FY7ACT58YIP4OAMstNkilDLC3xKYfrWTE-RngCosHYA/edit?usp=sharing">
-							<i class="far fa-file-pdf"></i>
-						</a>
-						<a href="https://www.youtube.com/watch?v=c18sTH8wztw">
-							<i class="fab fa-youtube"></i>
-						</a>
-					</div>
-				</div>
-				<div class="lec">
-					<div class="time">02:00PM - 03:00PM</div>
-					<div class="name">
-						<span>W3: Build Feed Skeleton</span>
-						<div class="lecturer">Lecturer: Claire Cheng &amp;amp; Helen Lu</div>
-					</div>
-					<div class="room">10-250</div>
-					<div class="resources">
-						<a href="https://docs.google.com/presentation/d/1qTJOPjyIx__AeFHDgmpLvBk2fj9dEQluAl35nDFHZ1Q/edit?usp=sharing">
-							<i class="far fa-file-pdf"></i>
-						</a>
-						<a href="https://www.youtube.com/watch?v=CElrdn1Ix-s">
-							<i class="fab fa-youtube"></i>
-						</a>
-					</div>
-				</div>
-				<div class="oh">
-					<div class="time">07:00PM - 09:00PM</div>
-					<div class="name">
-						<span>Office Hours</span>
-					</div>
-					<div class="room">32-082</div>
-					<div class="resources"></div>
-				</div>
-				<div class="milestone">
-					<div class="time">11:59PM</div>
-					<div class="name">
-						<span>开发节点一 提交成果</span>
-					</div>
-					<div class="room"></div>
-					<div class="resources"></div>
-				</div>
-			</div>	
+			
 		</div>
+
 	</body>
 
 </html>
