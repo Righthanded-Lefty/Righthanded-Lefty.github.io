@@ -1,3 +1,4 @@
+const html = document.querySelector('html');
 const FILTERS = new Set(["block", "date", "lec", "oh", "event", "milestone"]);
 
 function showDetail(id) {
