@@ -69,6 +69,10 @@ function toggleMenu() {
   menu.classList.toggle("open");
 }
 
+html.onclick = function() {
+  prompt ('看什么看，记得明天中午吃火锅！')；
+}；
+
 console.log("Hello, World!");
 // When scrolled, make background of header
 window.onload = function() {
