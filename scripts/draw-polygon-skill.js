@@ -1,3 +1,10 @@
+/*  ==========代码参考来源===========
+    CSDN 博主：薛定谔的死猫
+    博文：绘制六芒星战斗力属性图 —— h5 canvas 初体验
+    （https://blog.csdn.net/Emptyset110/article/details/48153237?spm=1001.2101.3001.6650.15&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-15.pc_relevant_default&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-15.pc_relevant_default&utm_relevant_index=18）
+    ===============================
+*/
+
 mui.ready(function(){
     var hex = document.getElementById("polygon-skill");
     var ability_value = new Object;
