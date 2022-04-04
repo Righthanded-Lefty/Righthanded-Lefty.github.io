@@ -1,21 +1,21 @@
 mui.ready(function(){
-    var hex = document.getElementById("polygon");
+    var hex = document.getElementById("polygon-strength");
     var ability_value = new Object;
     var ability_name = new Object;
     //设置能力值
-    ability_value[0] = 0.5;
-    ability_value[1] = 0.6;
-    ability_value[2] = 0.7;
-    ability_value[3] = 0.5;
-    ability_value[4] = 0.0;
-    ability_value[5] = 0.4;
+    ability_value[0] = 0.4;
+    ability_value[1] = 0.55;
+    ability_value[2] = 0.6;
+    ability_value[3] = 0.6;
+    ability_value[4] = 0.8;
+    ability_value[5] = 0.7;
     //设置能力属性名
-    ability_name[0] = '正手截击2.5';
-    ability_name[1] = '正手3.0';
-    ability_name[2] = '反手（双手）3.5';
-    ability_name[3] = '反手截击2.5';
-    ability_name[4] = '发球（未触及）';
-    ability_name[5] = '高压球2.0';
+    ability_name[0] = '爆发力 40分';
+    ability_name[1] = '速度 55分';
+    ability_name[2] = '协调性 60分';
+    ability_name[3] = '柔韧性 60分';
+    ability_name[4] = '耐力 80分';
+    ability_name[5] = '力量 70分';
     polygon(hex, 6, 6, ability_value, ability_name);            
 });
 
@@ -41,7 +41,7 @@ function polygon(obj, side, part, ability_value, ability_name) {
         for (var i=0; i<=side; i++) {
             ability.lineTo(Math.cos(i*theta)*space*j+xCenter,-Math.sin(i*theta)*space*j+yCenter);
         }
-        var r=73, g=101,b=115;
+        var r=73, g=101, b=115;
         ability.fillStyle = "rgba("+73+","+101+","+115+"," + 0.4 + ")";
         ability.fill();
         ability.closePath();

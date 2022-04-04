@@ -1,0 +1,100 @@
+/* Your Code Here! */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+
+:root {
+	--primary: #396fff;
+	--grey: #f7f7f7;
+	--white: #fff;
+
+	--xs: 4px;
+	--s: 8px;
+	--m: 16px;
+	--l: 24px;
+	/* 8pt-Grid System is so-called because we are prone to use
+	increments of 8pt in our style settings. */
+}
+
+html {
+	background-color: darkgray;
+}
+
+.bodyContainer {
+	max-width: 1260px;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0 auto;
+	background-color: aliceblue;
+	padding: 0 20px 20px 20px;
+	border: 5px solid black;
+}
+
+/*
+.profilePic {
+	align-items: center;
+	height: 400px;
+	width: 400px;
+	border-radius: 200px;
+}
+*/
+
+.u-textCenter {
+	text-align: center;
+}
+
+.navContainer {
+	max-width: 1270px;
+	margin: 0 auto;
+/*	padding: var(--s) var(--m);
+*/	padding: var(--s) 20px 20px 20px;
+	background-color: var(--primary);
+}
+
+.navTitle {
+	color: var(--white);
+}
+
+.profileContainer {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.avatarContainer {
+/*	padding: 0 35%;
+*/
+	width: 300px;
+}
+
+.avatar {
+	/* make it responsive */
+	max-width: 100%;
+/*	width: 100%;
+	height: auto;
+	*/
+	width: 300px;
+	height: auto;
+	display: block;
+	border-radius: var(--m);
+	/* div height to be the same as width */
+	padding-top: 100%;
+
+	/* make it a circle */
+	border-radius: 50%;
+
+	/* Add image */
+	background-image: url("../../images/profile/profile-xu-zhe.png");
+
+	/* Centering on image's center*/
+	background-position-y: center;
+	background-position-x: center;
+	background-repeat: no-repeat;
+
+	/* It makes the clue thing, takes smaller dimension ... */
+	background-size: cover;
+
+	/* It is optional, for making this div centered in ... */
+	margin: 0 auto;
+}
+
+.u-flex {
+	display: flex;
+}

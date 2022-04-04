@@ -9,174 +9,425 @@
 	<title>学员（徐*）的报告 ｜ Haaiteh Tennis Club</title>
 
     <script src="../scripts/mui.js" type="text/javascript"></script>
-    <link href="../styles/mui/mui.css" rel="stylesheet"/>
+<!--    <link href="../styles/mui/mui.css" rel="stylesheet"/>
+-->
     <link rel="stylesheet" type="text/css" href="../styles/css/spreadsheet.css">
-    <script src="../scripts/draw-polygon.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/css/style-basic.css">
+    <script src="../scripts/draw-polygon-skill.js" type="text/javascript"></script>
+    <script src="../scripts/draw-polygon-strength.js" type="text/javascript"></script>
 </head>
 <body>
-	<h2>一、 队员简况</h2>
-	<h2>二、 基本技术评价体系</h2>
-	<canvas id="polygon">很遗憾，您的浏览器不支持canvas:(</canvas>
-	<h2>三、 RTG 体能测试</h2>
-	<h3>体能测试记录表</h3>
-	<table id="performance-test-form-blank">
-		<caption>说明：xxx</caption>
-		<thead>
-			<colgroup>
-				<col span="1">
-				<col span="3">
-				<col span="2">
-			</colgroup>
-			<tr>
-				<th>&nbsp;</th>
-				<th colspan="3">&nbsp;</th>
-				<th scope="col">第一次<br>First Attempt</th>
-				<th scope="col">第二次<br>Second Attempt</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td rowspan="2" scope="rowgroup">&nbsp;</td>
-				<td colspan="2" scope="row">身高 Height</td>
-				<td>cm</td>
-				<td></td>
-				<td class="lineTd"></td>
-			</tr>
-			<tr>
-				<td colspan="2" scope="row">体重 Body Weight</td>
-				<td>kg</td>
-				<td></td>
-				<td class="lineTd"></td>
-			</tr>
-			<tr>
-				<td class="rowTitle" rowspan="6" scope="rowgroup">力量，爆发力 Streng &amp; Power</td>
-				<td rowspan="3" scope="rowgroup">立定跳远<br>Standing Long Jump</td>
-				<td scope="row">双 Both</td>
-				<td>cm</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td scope="row">右 Right</td>
-				<td>cm</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td scope="row">左 Left</td>
-				<td>cm</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td colspan="2" scope="rowgroup">立定三步跳远 Standing Triple Jump</td>
-				<td>cm</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td rowspan="2" scope="rowgroup">实心球<br>Medicin Ball Throw</td>
-				<td scope="row">正抛 Overthrow</td>
-				<td>cm</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td scope="row">后抛 Back throw</td>
-				<td>cm</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td class="rowTitle" rowspan="2" scope="rowgroup">速度 Speed</td>
-				<td colspan="2" scope="rowgroup">20米跑 20m Sprint</td>
-				<td>sec</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td colspan="2" scope="rowgroup">变向跑 Pro-Agility Test</td>
-				<td>sec</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td class="rowTitle" scope="row">耐力 Endurance</td>
-				<td colspan="2" scope="rowgroup">折返跑 Shuttle Run</td>
-				<td>reps</td>
-				<td></td>
-				<td class="lineTd"></td>
-			</tr>
-		</tbody>
-		<tfoot>
-			<tr>
-				<td colspan="6"> -- <a href="http://rt-garden.com/zh/staff-4/"><cite title="[日]小澤 弘幸，专业网球体能师">Ozawa Hiroyuki</cite></a>, Fitness Director, <abbr title="Rainbow Tennis Garden网球学校（北京）">RTG</abbr>.</td>
-			</tr>
-		</tfoot>
-	</table>
-	<h3>历史情况对比</h3>
-	<table class="histRec" id="performance-track-history">
-		<caption>说明：
-			<dl>
-				<dt>右脚/左脚比率</dt><dd>左右力量的差距的比例，0.95-1.05算是正常。这个范围外的话，受伤的可能性会高一点，也会影响正常的打球动作。</dd>
-				<dt>立跳/三步比率</dt><dd>这是比较立定跳远和三步跳远的比率，如果没到3.0的标准的话，对力量，体重偏重，或者脚腕偏弱。</dd>
-				<dt>变向跑-20米跑</dt><dd>PAT的时间减去20m的时间，能知道两次换方向的时间。</dd>
-			</dl><time datetime="2022-3-30">2022-3-30</time></caption>
-		<thead>
-			<colgroup>
-				<col span="8">
-				<col span="2">
-				<col span="7">
-				<col span="2">
-			</colgroup>
-			<tr>
-				<th>姓名</th>
-				<th>出生年月</th>
-				<th>岁</th>
-				<th>身高</th>
-				<th>体重</th>
-				<th>立定跳远</th>
-				<th>单脚跳远右</th>
-				<th>单脚跳远左</th>
-				<th colspan="2">右脚/左脚比率</th>
-				<th>立定三步跳远</th>
-				<th>立跳/三步跳比率</th>
-				<th>实心球（正）</th>
-				<th>实心球（后）</th>
-				<th>20米跑</th>
-				<th>变向跑</th>
-				<th>变向跑减20米跑差值</th>
-				<th colspan="2">折返跑</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>徐*</td>
-				<td><time datetime="1980-01-01">19xx-xx-xx</time></td>
-				<td>xx</td>
-				<td>182</td>
-				<td>75</td>
-				<td>--</td>
-				<td>--</td>
-				<td>--</td>
-				<td style="">--</td>
-				<td>△</td>
-				<td>--</td>
-				<td>--</td>
-				<td>--</td>
-				<td>--</td>
-				<td>--</td>
-				<td>--</td>
-				<td>--</td>
-				<td style="">--</td>
-				<td>×</td>
-			</tr>
-		</tbody>
-		<tfoot></tfoot>
-	</table>
-	<h3>阶段性指导意见</h3>
-	<h2>四、 战术素养</h2>
-	<h2>……</h2>
-	<h2>五、 结论</h2>
+	<nav class="navContainer">
+		<h1 class="navTitle">徐* 的阶段性评估报告</h1>
+	</nav>
+
+	<div class="bodyContainer">
+		<h2>一、 队员简况</h2>
+		<div class="profileContainer">
+			<div class="avatarContainer">
+				<div class="avatar">
+				</div>
+			</div>
+			<canvas id="polygon-skill">很遗憾，您的浏览器不支持canvas:(</canvas>
+			<canvas id="polygon-strength">很遗憾，您的浏览器不支持canvas:(</canvas>
+		</div>
+		<h2>二、<cite title="美国国际网球学院（iTUSA）发展的一套基于现代网球技术理念的教练员和运动员评价标准。">iTUSA</cite> 初级技术评价体系</h2>
+		<h3>正手</h3>
+		<table id="forehand-groundstroke">
+			<caption>评估时间：<time datetime="2022-03-30">2022-03-30</time>  当前水平：3.0</caption>
+			<thead>
+				<colgroup></colgroup>
+				<tr>
+					<th scope="col">环节名称</th>
+					<th scope="col">索引号</th>
+					<th scope="col">标准动作陈述</th>
+					<th scope="col">纠正前</th>
+					<th scope="col">纠正后</th>
+					<th scope="col">纠错视频参考链接</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="rowTitle" rowspan="4" scope="rowgroup">2. 后摆/下蹲</td>
+					<td scope="row">§ 2-1-3</td>
+					<td>以前脚为轴心，并将身体重量转移至这只脚上</td>
+					<td>否</td>
+					<td>是</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td scope="row">§ 2-1-4</td>
+					<td>将后脚的脚跟抬起</td>
+					<td>否</td>
+					<td>待考察</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td scope="row">§ 2-2-1</td>
+					<td>不要用手臂收回球拍，而是要将转身与转肩作为一个整体动作来完成</td>
+					<td>否</td>
+					<td>是</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td scope="row">§ 2-2-5</td>
+					<td>转身时保持后摆放松，并在身体的前面</td>
+					<td>否</td>
+					<td>待考察</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="rowTitle" rowspan="1" scope="rowgroup">3. 弧形拉拍</td>
+					<td scope="row">§ 3-1</td>
+					<td>开始摆动，确保拍头位置与头部位置平行</td>
+					<td>否</td>
+					<td>是</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="rowTitle" rowspan="2" scope="rowgroup">6. 击球点</td>
+					<td scope="row">§ 6-2</td>
+					<td>最佳击球点位于球网45度方向，也就是说在球网与侧面挡网之间的平分线上</td>
+					<td>否</td>
+					<td>否</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td scope="row">§ 6-3</td>
+					<td>击球点的高度位于腰部与胸部之间</td>
+					<td>否</td>
+					<td>是</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="rowTitle" rowspan="4" scope="rowgroup">8. 平衡</td>
+					<td scope="row">§ 8-3</td>
+					<td>控制好重心，保持中心轴稳定</td>
+					<td>否</td>
+					<td>是</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td scope="row">§ 8-4</td>
+					<td>击球前不要向前倒</td>
+					<td>否</td>
+					<td>是</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td scope="row">§ 8-5</td>
+					<td>也不要向后倒</td>
+					<td>否</td>
+					<td>待考察</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td scope="row">§ 8-6</td>
+					<td>保持头部稳定并略向前倾，后摆挥拍和随挥时尽量不要摆动</td>
+					<td>否</td>
+					<td>是</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="rowTitle" rowspan="3" scope="rowgroup">10. 随挥</td>
+					<td scope="row">§ 10-1</td>
+					<td>向前挥拍击球后球拍继续前行收于身体侧面</td>
+					<td>否</td>
+					<td>是</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td scope="row">§ 10-3</td>
+					<td>曲臂，球拍以平缓、放松的动作收于肩部以下</td>
+					<td>否</td>
+					<td>否</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td scope="row">§ 10-6</td>
+					<td>关闭式站位击球时随挥后身体的全部重量转移到前脚</td>
+					<td>否</td>
+					<td>否</td>
+					<td></td>
+				</tr>
+			</tbody>
+			<tfoot></tfoot>
+		</table>
+		<h3>正手截击</h3>
+		<table id="forehand-volley">
+			<caption>评估时间：<time datetime="2022-03-30">2022-03-30</time>  当前水平：2.5</caption>
+			<thead>
+				<colgroup></colgroup>
+				<tr>
+					<th scope="col">环节名称</th>
+					<th scope="col">索引号</th>
+					<th scope="col">标准动作陈述</th>
+					<th scope="col">纠正前</th>
+					<th scope="col">纠正后</th>
+					<th scope="col">纠错视频参考链接</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="rowTitle" rowspan="2" scope="rowgroup">1. 握拍</td>
+					<td scope="row">§ 1-1</td>
+					<td>采取大陆式握拍，球拍拍面对准来球方向，也可以用下旋进行截击</td>
+					<td>否</td>
+					<td>是</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td scope="row">§ 1-2</td>
+					<td>像握紧铁锤一样握紧球拍</td>
+					<td>否</td>
+					<td>是</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="rowTitle" rowspan="4" scope="rowgroup">2. 后摆/下蹲</td>
+					<td scope="row">§ 2-1-1</td>
+					<td>非击球手放在拍颈处，增加握拍稳定性，也可以辅助转肩</td>
+					<td>否</td>
+					<td>是</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td scope="row">§ 2-1-4</td>
+					<td>不要用手臂拉拍，通过转肩完成</td>
+					<td>否</td>
+					<td>待考察</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td scope="row">§ 2-2-1</td>
+					<td>后摆短而小，拉拍不要超过后肩</td>
+					<td>否</td>
+					<td>待考察</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td scope="row">§ 2-2-3</td>
+					<td>球拍和手臂成字母V字形</td>
+					<td>否</td>
+					<td>待考察</td>
+					<td></td>
+				</tr>
+			</tbody>
+			<tfoot>
+			</tfoot>		
+		</table>
+		<h3>高压球</h3>
+		<table id="smash">
+			<caption>评估时间：<time datetime="2022-03-30">2022-03-30</time>  当前水平：2.0</caption>
+			<thead>
+				<colgroup></colgroup>
+				<tr>
+					<th scope="col">环节名称</th>
+					<th scope="col">索引号</th>
+					<th scope="col">标准动作陈述</th>
+					<th scope="col">纠正前</th>
+					<th scope="col">纠正后</th>
+					<th scope="col">纠错视频参考链接</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="rowTitle" rowspan="1" scope="rowgroup">2. 后摆</td>
+					<td scope="row">§ 2-6</td>
+					<td>保持上半身侧对球网</td>
+					<td>否</td>
+					<td>是</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="rowTitle" rowspan="2" scope="rowgroup">6. 非击球手的使用</td>
+					<td scope="row">§ 6-1</td>
+					<td>非击球手指向拍头位置，转身、最大幅度地转肩</td>
+					<td>否</td>
+					<td>是</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td scope="row">§ 6-2</td>
+					<td>保持非击球臂向上伸展，指向来球，以便帮助你预判并更好地找准击球时间</td>
+					<td>否</td>
+					<td>是</td>
+					<td></td>
+				</tr>
+
+			</tbody>
+			<tfoot></tfoot>		
+		</table>
+		
+		<h2>三、 RTG 体能测试</h2>
+		<h3>体能测试记录表</h3>
+		<table id="performance-test-form-blank">
+			<caption>说明：xxx</caption>
+			<thead>
+				<colgroup>
+					<col span="1">
+					<col span="3">
+					<col span="2">
+				</colgroup>
+				<tr>
+					<th>&nbsp;</th>
+					<th colspan="3">&nbsp;</th>
+					<th scope="col">第一次<br>First Attempt</th>
+					<th scope="col">第二次<br>Second Attempt</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="2" scope="rowgroup">&nbsp;</td>
+					<td colspan="2" scope="row">身高 Height</td>
+					<td>cm</td>
+					<td></td>
+					<td class="lineTd"></td>
+				</tr>
+				<tr>
+					<td colspan="2" scope="row">体重 Body Weight</td>
+					<td>kg</td>
+					<td></td>
+					<td class="lineTd"></td>
+				</tr>
+				<tr>
+					<td class="rowTitle" rowspan="6" scope="rowgroup">力量，爆发力 Streng &amp; Power</td>
+					<td rowspan="3" scope="rowgroup">立定跳远<br>Standing Long Jump</td>
+					<td scope="row">双 Both</td>
+					<td>cm</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td scope="row">右 Right</td>
+					<td>cm</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td scope="row">左 Left</td>
+					<td>cm</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="2" scope="rowgroup">立定三步跳远 Standing Triple Jump</td>
+					<td>cm</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td rowspan="2" scope="rowgroup">实心球<br>Medicin Ball Throw</td>
+					<td scope="row">正抛 Overthrow</td>
+					<td>cm</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td scope="row">后抛 Back throw</td>
+					<td>cm</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="rowTitle" rowspan="2" scope="rowgroup">速度 Speed</td>
+					<td colspan="2" scope="rowgroup">20米跑 20m Sprint</td>
+					<td>sec</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="2" scope="rowgroup">变向跑 Pro-Agility Test</td>
+					<td>sec</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="rowTitle" scope="row">耐力 Endurance</td>
+					<td colspan="2" scope="rowgroup">折返跑 Shuttle Run</td>
+					<td>reps</td>
+					<td></td>
+					<td class="lineTd"></td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="6"> -- <a href="http://rt-garden.com/zh/staff-4/"><cite title="[日]小澤 弘幸，专业网球体能师">Ozawa Hiroyuki</cite></a>, Fitness Director, <abbr title="Rainbow Tennis Garden网球学校（北京）">RTG</abbr>.</td>
+				</tr>
+			</tfoot>
+		</table>
+		<h3>历史情况对比</h3>
+		<table class="histRec" id="performance-track-history">
+			<caption>说明：
+				<dl>
+					<dt>右脚/左脚比率</dt><dd>左右力量的差距的比例，0.95-1.05算是正常。这个范围外的话，受伤的可能性会高一点，也会影响正常的打球动作。</dd>
+					<dt>立跳/三步比率</dt><dd>这是比较立定跳远和三步跳远的比率，如果没到3.0的标准的话，对力量，体重偏重，或者脚腕偏弱。</dd>
+					<dt>变向跑-20米跑</dt><dd>PAT的时间减去20m的时间，能知道两次换方向的时间。</dd>
+				</dl><time datetime="2022-3-30">2022-3-30</time></caption>
+			<thead>
+				<colgroup>
+					<col span="8">
+					<col span="2">
+					<col span="7">
+					<col span="2">
+				</colgroup>
+				<tr>
+					<th>姓名</th>
+					<th>出生年月</th>
+					<th>岁</th>
+					<th>身高</th>
+					<th>体重</th>
+					<th>立定跳远</th>
+					<th>单脚跳远右</th>
+					<th>单脚跳远左</th>
+					<th colspan="2">右脚/左脚比率</th>
+					<th>立定三步跳远</th>
+					<th>立跳/三步跳比率</th>
+					<th>实心球（正）</th>
+					<th>实心球（后）</th>
+					<th>20米跑</th>
+					<th>变向跑</th>
+					<th>变向跑减20米跑差值</th>
+					<th colspan="2">折返跑</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>徐*</td>
+					<td><time datetime="1980-01-01">19xx-xx-xx</time></td>
+					<td>xx</td>
+					<td>182</td>
+					<td>75</td>
+					<td>--</td>
+					<td>--</td>
+					<td>--</td>
+					<td style="">--</td>
+					<td>△</td>
+					<td>--</td>
+					<td>--</td>
+					<td>--</td>
+					<td>--</td>
+					<td>--</td>
+					<td>--</td>
+					<td>--</td>
+					<td style="">--</td>
+					<td>×</td>
+				</tr>
+			</tbody>
+			<tfoot></tfoot>
+		</table>
+		<h3>阶段性指导意见</h3>
+		<ul>
+			<li>身体素质良好，保持即可，肌肉力量、肌肉耐力无需增加训练量。</li>
+			<li>需进行网球爆发力的针对性练习。前序环节应训练速度（参考短跑发力方式的训练），通过站定击打落地球找到发力的顺畅节奏。</li>
+			<li>如不能保证每周5小时以上的网球练习，建议不单独增加体能模块。将上述注意事项融入网球练习中，有针对性的训练即可。</li>
+		</ul>
+
+		<h2>四、 战术素养</h2>
+
+		<h2>……</h2>
+
+		<h2>五、 结论</h2>
+	</div>
 </body>
 </html>
