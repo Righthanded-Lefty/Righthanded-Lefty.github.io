@@ -38,20 +38,72 @@
 <body>
 	<!--navbar ceases when top of page. appears when scrolled down.-->
 	<header>
-		<nav>
-			<div id="flex-navbar-wide-screen" class="u-flex justify-between items-center">
-				<div id="event-name-abbr" class="u-flex justify-start"></div>
+		<nav class="navContainer-unisize">
+			<div id="flex-navbar-wide-screen" class="u-flex w-full pt-24 justify-between items-center">
+				<div id="event-name-abbr" class="u-flex justify-start">
+					<a aria-current="page" class="visible p-0 m-0 text-black text-xl sm:text-2xl leading-0 font-black" href="/"><i>iTUSA</i> 2022·北京站</a>
+				</div>
 
-				<nav></nav>
+				<nav class="hidden md:flex flex-none space-x-10">
+					<a href="#details" class="relative text-black text-base font-bold">详情</a>
+					<a href="#schedule" class="relative text-black text-base font-bold">日程</a>
+					<a href="#faq" class="relative text-black text-base font-bold">FAQ</a>
+				</nav>
 				
-				<div></div>
+				<div class="sm:block justify-end text-right">
+					<button>立即报名</button>
+				</div>
 				
-				<div></div>
+				<div class="block sm:hidden items-center  ">
+					<button class="visible bg-black py-4 px-8 align-middle text-center text-sm font-semibold rounded-sm text-white">立即报名</button>
+				</div>
 			</div>
 		</nav>
 	</header>
 
-	<main></main>
+	<main>
+		<!--here comes a very fancy oil-painting like ad.-->
+		<div id="theme-pic"></div>
+		
+		<!--here goes the major columns of event info.-->
+		<div id="content-long" class="contentContainer">
+			<svg></svg>
+			<div>
+				<div id="details">
+					<div id="details-grid-1" class="u-grid col-span-6 grid-cols-8 sm:grid-cols-6 md:gap-x-16 gap-y-2 text-pink">
+						<div class="u-flex flex-col items-start justify-center col-span-5 sm:col-span-3">
+							<h1 class="text-2xl xs:text-3xl md:text-5xl text-left">
+								<span class="block">列席这届</span>
+								<span class="block">网球专业盛会</span>
+							</h1>
+						</div>
+						<div class="u-flex flex-row gap-8 col-span-3 md:col-span-3 text-sm items-start pt-3 sm:pt-0 sm:items-end">
+							<p class="hidden md:block text-sm lg:text-lg xl:text-xl 2xl:text-2xl">
+								<span class="block text-xs lg:text-sm mb-1">日期</span>
+								<time datetime="2022-04-28">2022年四月28日</time> - <time datetime="2022-04-30">30日</time>
+							</p>
+							<p></p>
+							<p class="hidden md:block text-sm lg:text-lg xl:text-xl 2xl:text-2xl">
+								<span class="block text-xs lg:text-sm mb-1">现场</span>
+								<a href="">北京·顺义 和园景逸大酒店网球馆</a>
+							</p>
+							<p class="hidden md:block text-sm lg:text-lg xl:text-xl 2xl:text-2xl">
+								<span class="block text-xs lg:text-sm mb-1">线上</span>
+								iTUSA 初级·中级 网球教练员认证研修课程及证书申领
+							</p>
+						</div>
+						<div></div>
+						<div></div>
+					</div>
+					<div id="details-grid-2"></div>
+				</div>
+				<div id="sponsors"></div>
+				<div id="slider"></div>
+				<div id="schedule"></div>
+				<div id="faq"></div>
+			</div>
+		</div>
+	</main>
 
 	<footer>
 		<p>Some copyright info or perhaps some author info for an &lt;article&gt;?</p>
