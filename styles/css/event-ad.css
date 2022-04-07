@@ -14,6 +14,12 @@
     display: flex;
 }
 
+@media (min-width: 768px) {
+    .md\:flex {
+        display: flex;
+    }
+}
+
 .flex-row {
     flex-direction: row;
 }
@@ -62,7 +68,8 @@
 }
 
 .gap-8 {
-    grid-row-gap: 8px;
+    grid-row-gap: 13px;
+    grid-column-gap: 13px;
 }
 
 .gap-y-2 {
@@ -83,6 +90,14 @@
 
 .col-span-3 {
     grid-column: span 3/span 3;
+}
+
+.col-span-1 {
+    grid-column: span 1/span 1;
+}
+
+.col-start-4 {
+    grid-column-start: 4;
 }
 
 @media (min-width: 768px) {
@@ -173,43 +188,43 @@ a[href^="tel"]::before {
 
 .text-2xl {
     font-size: 36px;
-    line-height: 8px;
+    line-height: 50px;
 }
 
 .text-sm {
-    font-size: 6px;
-    line-height: 5px;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .text-xs {
-    font-size: 5px;
-    line-height: 4px;
+    font-size: 12px;
+    line-height: 16px;
 }
 
 @media (min-width: 1024px) {
     .lg\:text-lg {
-        font-size: 9px;
-        line-height: 7px;
+        font-size: 18px;
+        line-height: 24px;
     }
 }
 
 @media (min-width: 1024px) {
     .lg\:text-sm {
-        font-size: 6px;
-        line-height: 5px;
+        font-size: 14px;
+        line-height: 20px;
     }
 }
 
 @media (min-width: 768px) {
     .md\:text-5xl {
         font-size: 72px;
-        line-height: 1;
+        line-height: 100;
     }
 }
 
 @media (min-width: 400px) {
     .xs\:text-3xl {
         font-size: 48px;
-        line-height: 10px;
+        line-height: 70px;
     }
 }
