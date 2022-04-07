@@ -3,8 +3,22 @@
     display: none;
 }
 
+.block {
+    display: block;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
 @media (min-width: 768px) {
     .md\:block {
+        display: block;
+    }
+}
+
+@media (min-width: 640px) {
+    .sm\:block {
         display: block;
     }
 }
@@ -44,6 +58,14 @@
     justify-content: end;
 }
 
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-items-start {
+    justify-items: start;
+}
+
 .items-start {
     align-items: flex-start;
 }
@@ -54,6 +76,24 @@
 
 .items-end {
     align-items: flex-end;
+}
+
+@media (min-width: 768px) {
+    .md\:flex-row {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    .lg\:items-start {
+        align-items: start;
+    }
+}
+
+@media (min-width: 1024px) {
+    .lg\:items-center {
+        align-items: center;
+    }
 }
 
 @media (min-width: 640px) {
@@ -80,6 +120,10 @@
     grid grid-template-columns: repeat(8, minmax(0, 1fr));
 }
 
+.col-span-12 {
+    grid-column: span 12/span 12;
+}
+
 .col-span-6 {
     grid-column: span 6/span 6;
 }
@@ -92,12 +136,35 @@
     grid-column: span 3/span 3;
 }
 
+.col-span-2 {
+    grid-column: span 2/span 2;
+}
+
 .col-span-1 {
     grid-column: span 1/span 1;
 }
 
 .col-start-4 {
     grid-column-start: 4;
+}
+
+@media (min-width: 768px) {
+    .md\:gap-16 {
+        grid-row-gap: 16px;
+        grid-column-gap: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:grid {
+        display: grid;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:grid-cols-12 {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
 }
 
 @media (min-width: 768px) {
@@ -130,6 +197,12 @@
     }
 }
 
+@media (min-width: 640px) {
+    .sm\:col-span-5 {
+        grid-column: span 5/span 5;
+    }
+}
+
 /* definitions for Header */
 .navContainer-unisize {
     height: 72px;
@@ -137,21 +210,53 @@
     padding-bottom: 16px;
 }
 
-.w-full {
-    width: 100%;
-}
-
 .pt-3 {
     padding-top: 3px;
+}
+
+.pt-4 {
+    padding-top: 4px;
+}
+
+.pt-12 {
+    padding-top: 12px;
 }
 
 .pt-24 {
     padding-top: 24px;
 }
 
+.pr-32 {
+    padding-right: 32px;
+}
+
 @media (min-width: 640px) {
     .sm\:pt-0 {
         padding-top: 0;
+    }
+}
+
+@media (min-width: 640px) {
+    .sm\:pt-12 {
+        padding-top: 12px;
+    }
+}
+
+@media (min-width: 640px) {
+    .sm\:pr-0 {
+        padding-right: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .lg\:pr-0 {
+        padding-right: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .lg\:self-center {
+        align-self: center;
     }
 }
 
@@ -162,6 +267,58 @@
 
 .mb-1 {
     margin-bottom: 4px;
+}
+
+.mb-14 {
+    margin-bottom: 14px;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mx-4 {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.my-3 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.videoWrapper {
+    height: 0;
+    padding-bottom: 51.25%;
+    padding-top: 40px;
+    position: relative;
+}
+
+.relative {
+    position: relative;
+}
+
+.z-40 {
+    z-index: 40;
+}
+
+@media (min-width: 640px) {
+    .sm\:mx-8 {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+}
+
+@media (min-width: 640px) {
+    .sm\:my-32 {
+        margin-top: 128px;
+        margin-bottom: 128px ;
+    }
 }
 
 /* definitions for Footer */
@@ -178,8 +335,16 @@ a[href^="tel"]::before {
     color: rgba(247, 141, 120, 1.0);
 }
 
+.text-white {
+    color: rgba(221, 219, 212, 1.0);
+}
+
 .text-left {
     text-align: left;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .text-right {
@@ -189,6 +354,11 @@ a[href^="tel"]::before {
 .text-2xl {
     font-size: 36px;
     line-height: 50px;
+}
+
+.text-xl {
+    font-size: 20px;
+    line-height: 28px;
 }
 
 .text-sm {
@@ -215,16 +385,23 @@ a[href^="tel"]::before {
     }
 }
 
-@media (min-width: 768px) {
-    .md\:text-5xl {
-        font-size: 72px;
-        line-height: 100;
+@media (min-width: 400px) {
+    .xs\:text-3xl {
+        font-size: 30px;
+        line-height: 36px;
     }
 }
 
-@media (min-width: 400px) {
-    .xs\:text-3xl {
+@media (min-width: 768px) {
+    .md\:text-5xl {
         font-size: 48px;
-        line-height: 70px;
+        line-height: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:text-xl {
+        font-size: 20px;
+        line-height: 28px;
     }
 }
