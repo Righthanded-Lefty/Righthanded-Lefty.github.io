@@ -39,7 +39,7 @@
 	<!--navbar ceases when top of page. appears when scrolled down.-->
 	<header>
 		<nav class="navContainer-unisize">
-			<div id="flex-navbar-wide-screen" class="u-flex w-full pt-24 justify-between items-center">
+			<div id="flex-navbar-wide-screen" class="u-flex pt-24 justify-between items-center">
 				<div id="event-name-abbr" class="u-flex justify-start">
 					<a aria-current="page" class="visible p-0 m-0 text-black text-xl sm:text-2xl leading-0 font-black" href="/"><i>iTUSA</i> 2022·北京站</a>
 				</div>
@@ -69,12 +69,12 @@
 		<div id="content-long" class="contentContainer">
 			<svg></svg>
 			<div>
-				<div id="details">
+				<div id="details" class="pt-4 sm:pt-12 mx-4 sm:mx-8 xl:mx-auto">
 					<div id="details-grid-1" class="u-grid col-span-6 grid-cols-8 sm:grid-cols-6 md:gap-x-16 gap-y-2 text-pink">
 						<div class="u-flex flex-col items-start justify-center col-span-5 sm:col-span-3">
 							<h1 class="text-2xl xs:text-3xl md:text-5xl text-left">
 								<span class="block">列席这届</span>
-								<span class="block">网球专业盛会</span>
+								<span class="block">专业网球盛会</span>
 							</h1>
 						</div>
 						<div class="u-flex flex-row gap-8 col-span-3 md:col-span-3 text-sm items-start pt-3 sm:pt-0 sm:items-end">
@@ -95,11 +95,52 @@
 						<div class="hidden col-span-1 col-start-4 items-start md:flex flex-row">
 							<span class="block text-xs lg:text-sm"><time datetime="2022-04-07">2022年四月7日</time>至<time datetime="2022-04-21">四月21日</time>开放报名</span>
 						</div>
+
+						<!--the next one is an 8-column grid framework adapted for mobile screens-->
 						<div></div>
 					</div>
-					<div id="details-grid-2"></div>
+					<div id="details-grid-2" class="overflow-hidden md:grid md:grid-cols-12 md:gap-16">
+						<div id="event-brief" class="col-span-12 sm:col-span-5 lg:pr-0">
+							<div class="lg:self-center">
+								<p id= "slogan" class="hidden sm:block text-pink text-left text-2xl md:text-xl pr-32 sm:pr-0">
+									<span class="block">iTUSA网球教练培训班 现场部分为期3天</span>
+									<span class="block">专注于教练员的初级/中级网球教学实践。</span>
+								</p>
+								<!--below is a mobile adaptable version of the words above-->
+								<p id="slogan-mobile"></p>
+								<!--below is a mobile version of sponsors info.-->
+								<div id="hosts-mobile"></div>
+								<p class="mt-8 text-xl text-white">美国国际网球学院（iTUSA）的网球教练员培训项目与市面上任何一家其他的教练培训和认证体系不同。它是一份邀请，更是一场挑战：三天里，参训的教练员需要将每一项（初级至中级）技术分别厘清，锤炼、乃至再造。引进国内的七年来，往期工作坊的教练员已经形成了社群，围绕着扎实的技术研讨，面对面展开密切交流和友好访问。</p>
+								<p class="mt-8 text-xl text-white">自1996年拉法院长接管iTUSA以来，学院始终围绕着两个基本点展开教研，即：①探索职业选手的成功秘诀，②并将这些原理运用到低水平球员的训练中，场上、场下协同全面提高运动员的竞技水平。二十几年的发展，其成果最终以训练数据库（3000+个训练视频持续更新）、在线比赛数据分析、网球动作分析技术等方式呈现。只有风格严谨、资历丰富且有成绩支撑的教练员才有机会特聘成为面授环节的导师。</p>
+								<p class="mt-8 text-xl text-white">为保质量，每期项目（一般每个城市每年不超过2期）通常只开放35个以内现场参与的席位。本次线下举办地为北京顺义，因疫情期间需服从当地防疫常态化管理要求，请对进出京最新政策保持关注。如确实无法前来，官方渠道报名的教练员可以收看视频回放，也可以选择顺延参与下一期iTUSA现场培训。</p>
+								<button class="hidden sm:block bg-pink mt-8 py-4 px-8 align-middle text-center rounded-sm text-sm font-semibold text-black">立即报名</button>
+							</div>
+						</div>
+						<div class="hidden md:block col-span-1"></div>
+						<div id="event-pv" class="hidden sm:block col-span-6">
+							<div class="videoWrapper relative z-40 pt-12">
+								<iframe src="" width="640" height="337" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div id="sponsors"></div>
+				<div id="hosts" class="hidden md:block 2xl:pt-12 mx-4 sm:mx-8 xl:mx-auto xl:max-w-6xl 2xl:max-w-7xl sm:my-32 xl:my-40 2xl:my-64">
+					<div class="relative">
+						<p class="text-pink text-center text-sm my-3">会务保障</p>
+						<div class="u-flex flex-col mx-auto md:flex-row justify-evenly mt-8 mb-14">
+							<div class="u-grid justify-items-start lg:items-center">
+								<a href="ht-tennis.com" target="_blank" rel="">
+									<img height="52.5px" width="auto" src="../images/icon/sponsor-ht-tennis/logo2011.jpg" alt="北京海特星辰体育发展有限公司">
+								</a>
+							</div>
+							<div class="u-grid justify-items-start lg:items-center">
+								<a href="rt-garden.com" target="_blank" rel="">
+									<img height="52.5px" width="auto" src="../images/icon/sponsor-rtg/logo2018.gif" alt="RTG（Rainbow Tennis Garden）国际网球俱乐部（北京）">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div id="slider"></div>
 				<div id="schedule"></div>
 				<div id="faq"></div>
