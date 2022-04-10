@@ -11,7 +11,7 @@
     overflow: hidden;
 }
 
-h2 {
+h2, h3, h4 {
     margin: 0;
 }
 
@@ -112,16 +112,28 @@ h2 {
 }
 
 .gap-8 {
-    grid-row-gap: 13px;
-    grid-column-gap: 13px;
+    grid-row-gap: 32px;
+    grid-column-gap: 32px;
 }
 
 .gap-y-2 {
     grid-row-gap: 8px;
 }
 
+.gap-y-4 {
+    grid-row-gap: 16px;
+}
+
+.gap-y-8 {
+    grid-row-gap: 32px;
+}
+
+.grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
 .grid-cols-8 {
-    grid grid-template-columns: repeat(8, minmax(0, 1fr));
+    grid-template-columns: repeat(8, minmax(0, 1fr));
 }
 
 .col-span-12 {
@@ -154,8 +166,8 @@ h2 {
 
 @media (min-width: 768px) {
     .md\:gap-16 {
-        grid-row-gap: 16px;
-        grid-column-gap: 16px;
+        grid-row-gap: 64px;
+        grid-column-gap: 64px;
     }
 }
 
@@ -178,6 +190,12 @@ h2 {
 }
 
 @media (min-width: 768px) {
+    .md\:gap-y-16 {
+        grid-row-gap: 64px;
+    }
+}
+
+@media (min-width: 768px) {
     .md\:col-span-3 {
         grid-column: span 3/span 3;
     }
@@ -192,6 +210,18 @@ h2 {
 @media (min-width: 640px) {
     .sm\:hidden {
         display: none;
+    }
+}
+
+@media (min-width: 640px) {
+    .sm\:col-span-1 {
+        grid-column: span 1/span 1;
+    }
+}
+
+@media (min-width: 640px) {
+    .sm\:col-span-2 {
+        grid-column: span 2/span 2;
     }
 }
 
@@ -214,24 +244,46 @@ h2 {
     padding-bottom: 16px;
 }
 
+.pb-6 {
+    padding-bottom: 24px;
+}
+
 .pt-3 {
-    padding-top: 3px;
-}
-
-.pt-4 {
-    padding-top: 4px;
-}
-
-.pt-12 {
     padding-top: 12px;
 }
 
+.pt-4 {
+    padding-top: 16px;
+}
+
+.pt-8 {
+    padding-top: 32px;
+}
+
+.pt-12 {
+    padding-top: 48px;
+}
+
+.pt-14 {
+    padding-top: 56px;
+}
+
 .pt-24 {
+    padding-top: 96px;
+}
+
+.py-14 {
     padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.py-14 {
+    padding-top: 56px;
+    padding-bottom: 56px;
 }
 
 .pr-32 {
-    padding-right: 32px;
+    padding-right: 128px;
 }
 
 .px-0 {
@@ -253,7 +305,14 @@ h2 {
 
 @media (min-width: 640px) {
     .sm\:pt-12 {
-        padding-top: 12px;
+        padding-top: 48px;
+    }
+}
+
+@media (min-width: 640px) {
+    .sm\:py-14 {
+        padding-top: 56px;
+        padding-bottom: 56px;
     }
 }
 
@@ -282,6 +341,10 @@ h2 {
 
 .mb-1 {
     margin-bottom: 4px;
+}
+
+.mb-2 {
+    margin-bottom: 8px;
 }
 
 .mb-8 {
@@ -327,6 +390,34 @@ h2 {
     position: relative;
 }
 
+.simplisticPhotoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-items: space-evenly;
+    max-height: 330px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: scroll;
+    padding: 0;
+    position: relative;
+    z-index: 1; }
+    .simplisticPhotoContainer img {
+        display: block;
+        height: 330px;
+        width: 340px;
+        object-fit: contain;
+        margin-right: 20px;
+    }
+/*        .simplisticPhotoContainer img .vertical {
+            height: 340px;
+            width: auto;
+        }
+        .simplisticPhotoContainer img .horizontal {
+            width: 330px;
+            height: auto;
+        }
+        */
+
 .swiperContainer {
     /* universal for swipers */
     list-style: none;
@@ -340,6 +431,16 @@ h2 {
     touch-action: pan-y;
 }
 
+.swiperWrapper {
+    display: flex;
+    height: 100%;
+    box-sizing: content-box;
+    position: relative;
+    transition-property: transform;
+    width: 100%;
+    z-index: 1;
+}
+
 .swiperItem {
     flex-shrink: 0;
     height: 100%;
@@ -347,6 +448,45 @@ h2 {
     transition-property: transform;
     width: 338px;
     margin-right: 20px;
+}
+
+.scheduleDayBox {
+    border-style: solid;
+    border-color: rgba(221, 219, 212, 0.5);
+    border-radius: 2px;
+    border-width: 4px;
+    box-sizing: content-box; }
+    .scheduleDayBox p.text-blue {
+        margin: 0 0 8px 0;
+        padding-top: 32px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .scheduleDayBox p.text-blue-top {
+        margin: 0 0 8px 0;
+        color: rgba(110, 155, 154, 1.0);
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .scheduleDayBox p.text-white {
+        margin: 0;
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+.border-white {
+    border-color: rgba(221, 219, 212, 1.0);
+}
+
+.border-4 {
+    border-width: 4px;
+}
+
+.rounded-sm {
+    border-radius: 2px;
 }
 
 .relative {
@@ -371,6 +511,12 @@ h2 {
     }
 }
 
+@media (min-width: 640px) {
+    .sm\:mt-20 {
+        margin-top: 80px;
+    }
+}
+
 @media (min-width: 768px) {
     .md\:mt-0 {
         margin-top: 0;
@@ -389,6 +535,10 @@ a[href^="tel"]::before {
 /* text settings */
 .text-pink {
     color: rgba(247, 141, 120, 1.0);
+}
+
+.text-blue {
+    color: rgba(110, 155, 154, 1.0);
 }
 
 .text-white {
@@ -436,6 +586,13 @@ a[href^="tel"]::before {
     .xs\:text-3xl {
         font-size: 30px;
         line-height: 36px;
+    }
+}
+
+@media (min-width: 640px) {
+    .sm\:text-4xl {
+        font-size: 36px;
+        line-height: 40px;
     }
 }
 
