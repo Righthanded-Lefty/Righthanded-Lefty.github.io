@@ -218,7 +218,8 @@ a {
         color: rgba(221, 219, 212, 1.0);
         text-align: left;
     }
-    .faqSetBox p {
+    .faqSetBox p,
+    .faqSetBox li {
         color: rgba(221, 219, 212, 0.75);
         text-align: left;
         font-size: 16px;
