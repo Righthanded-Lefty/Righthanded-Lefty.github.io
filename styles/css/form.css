@@ -48,11 +48,17 @@ textarea {
     resize: vertical;
 }
 
-fieldset {
+section fieldset {
     width: 250px;
     box-sizing: border-box;
     margin-left: 136px;
     border: 1px solid #999;
+}
+td fieldset {
+    width: auto;
+    box-sizing: content-box;
+    margin: 0;
+    border: 0;
 }
 
 button {
@@ -61,4 +67,11 @@ button {
 
 label {
   position: relative;
+}
+
+select {
+    display: inline-block;
+    width: 250px;
+    height: 2em;
+    box-sizing: border-box;
 }

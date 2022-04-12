@@ -17,6 +17,7 @@
 
 	<!--here links the stylesheets used on this page-->
     <link rel="stylesheet" type="text/css" href="../styles/css/form.css">
+    <link rel="stylesheet" type="text/css" href="../styles/css/spreadsheet.css">
 
 	<!--javascripts should not be imported here. A better place is before </body> tag-->
 </head>
@@ -26,7 +27,190 @@
 	<main>
 		<form>
 			<h1>网球运动员阶段性评估 ｜ iTUSA网球教学规范流程</h1>
-			<p>必填项目以 <strong><abbr title="required">*</abbr></strong>号标注。</p>
+			<p>必填项目以 <strong><abbr title="本项目为必填。">*</abbr></strong>号标注。</p>
+
+			<section>
+				<h2>学员基本信息</h2>
+				<fieldset>
+				  <legend>学员分类</legend>
+				  <ul>
+				      <li>
+				        <label for="title_1">
+				          <input type="radio" id="title_1" name="title" value="R" >
+				          休闲娱乐向（Recreational）
+				        </label>
+				      </li>
+				      <li>
+				        <label for="title_2">
+				          <input type="radio" id="title_2" name="title" value="S">
+				          初学者（Starter）
+				        </label>
+				      </li>
+				      <li>
+				        <label for="title_3">
+				          <input type="radio" id="title_3" name="title" value="AD">
+				          高水平（High-Level）
+				        </label>
+				      </li>
+				      <li>
+				        <label for="title_4">
+				          <input type="radio" id="title_4" name="title" value="Pro">
+				          职业班（Pro Course）
+				        </label>
+				      </li>
+				  </ul>
+				</fieldset>
+				<p>
+				  <label for="name">
+				    <span>姓名：</span>
+				    <strong><abbr title="本项目为必填。">*</abbr></strong>
+				  </label>
+				  <input type="text" id="name" name="username">
+				</p>
+				<p>
+				  <label for="mail">
+				    <span>E-mail：</span>
+				    <strong><abbr title="本项目为必填。">*</abbr></strong>
+				  </label>
+				  <input type="email" id="mail" name="usermail">
+				</p>
+				<p>
+				  <label for="pwd">
+				    <span>密码：</span>
+				    <strong><abbr title="本项目为必填。">*</abbr></strong>
+				  </label>
+				  <input type="password" id="pwd" name="password">
+				</p>
+			</section>
+
+			<section>
+				<h2>基本技术分析诊断</h2>
+				<p>
+				  <label for="skill-select">
+				    <span>评估项目：</span>
+				    <strong><abbr title="本项目为必填。">*</abbr></strong>
+				  </label>
+				  <select id="skill-select" name="Skills Diagnosed">
+				  	<option></option>
+				    <option value="Serve">发球</option>
+				    <option value="Forehand">正手</option>
+				    <option value="Backhand-Single">反手（单手）</option>
+				    <option value="Backhand-Double">反手（双手）</option>
+				    <option value="Volley-FH">正手截击</option>
+				    <option value="Volley-BH">反手截击</option>
+				    <option value="Smash">高压球</option>
+				  </select>
+				</p>
+				<p>
+				  <label for="diagnose-date">
+				    <span>评估日期：</span>
+				    <strong><abbr title="本项目为必填。">*</abbr></strong>
+				  </label>
+				  <input type="date" id="date" name="expiration">
+				</p>
+			</section>
+
+			<section>
+				<h3>一、正手击球技术</h3>
+				<h4>1. 握拍</h4>
+				<table id="FHG-step1">
+					<thead>
+						<tr>
+							<th scope="col">标准动作陈述</th>
+							<th scope="col">纠正前</th>
+							<th scope="col">纠正后</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td scope="row">像握紧铁锤一样握紧球拍（大陆式握拍）</td>
+							<td>
+								<fieldset>
+									<label for="FHG-step1-1-pre-Y">
+									  <input type="radio" id="FHG-step1-1-pre-Y" name="纠正前-FHG-1-1" value="" >
+									  合格
+									</label>
+									<label for="FHG-step1-1-pre-N">
+									  <input type="radio" id="FHG-step1-1-pre-N" name="纠正前-FHG-1-1" value="" >
+									  缺陷
+									</label>
+								</fieldset>
+								
+							</td>
+							<td>
+								<label for="FHG-step1-1-pre-N">
+								  <input type="radio" id="FHG-step1-1-pre-N" name="纠正后过关-FHG-1-1" value="" >
+								  过关
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td scope="row">握紧球拍垂直于地面，并将球拍放在你的发球手</td>
+							<td>
+								<fieldset>
+									<label for="FHG-step1-2-pre-Y">
+									  <input type="radio" id="FHG-step1-2-pre-Y" name="纠正前-FHG-1-2" value="" >
+									  合格
+									</label>
+									<label for="FHG-step1-2-pre-N">
+									  <input type="radio" id="FHG-step1-2-pre-N" name="纠正前-FHG-1-2" value="" >
+									  缺陷
+									</label>
+								</fieldset>
+							</td>
+							<td>
+								<label for="FHG-step1-2-pre-N">
+								  <input type="radio" id="FHG-step1-2-pre-N" name="纠正后过关-FHG-1-2" value="" >
+								  过关
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td scope="row">牢固地握紧球拍（但不要握得太紧）</td>
+							<td>
+								<fieldset>
+									<label for="FHG-step1-3-pre-Y">
+									  <input type="radio" id="FHG-step1-3-pre-Y" name="纠正前-FHG-1-3" value="" >
+									  合格
+									</label>
+									<label for="FHG-step1-3-pre-N">
+									  <input type="radio" id="FHG-step1-3-pre-N" name="纠正前-FHG-1-3" value="" >
+									  缺陷
+									</label>
+								</fieldset>
+							</td>
+							<td>
+								<label for="FHG-step1-3-pre-N">
+								  <input type="radio" id="FHG-step1-3-pre-N" name="纠正后过关-FHG-1-3" value="" >
+								  过关
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td scope="row">用球拍框击球测试握拍。感觉将球切削成两半</td>
+							<td>
+								<fieldset>
+									<label for="FHG-step1-4-pre-Y">
+									  <input type="radio" id="FHG-step1-4-pre-Y" name="纠正前-FHG-1-4" value="" >
+									  合格
+									</label>
+									<label for="FHG-step1-4-pre-N">
+									  <input type="radio" id="FHG-step1-4-pre-N" name="纠正前-FHG-1-4" value="" >
+									  缺陷
+									</label>
+								</fieldset>
+							</td>
+							<td>
+								<label for="FHG-step1-4-pre-N">
+								  <input type="radio" id="FHG-step1-4-pre-N" name="纠正后过关-FHG-1-4" value="" >
+								  过关
+								</label>
+							</td>
+						</tr>
+					</tbody>
+					<tfoot></tfoot>
+				</table>
+			</section>
 		</form>
 	</main>
 
