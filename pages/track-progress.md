@@ -1,4 +1,4 @@
----
+<!-----
 layout: default
 ---
 
@@ -40,7 +40,7 @@ end
 
 *   This is an unordered list following a header.
 *   This is an unordered list following a header.
-*   This is an unordered list following a header.
+*   This is an unordered list following a header.-->
 
 ## 2022-04-18 上午8.00-10.00
 ###### 教学目标：
@@ -126,7 +126,7 @@ end
 * 随着环节二到四动作复杂性的增加，开始迷茫，体现在脚下多余的跳步、并步。需更正一个认识，即：带着前一个环节成功的经验进入下一步。这里，具体地讲，是上步要小、控制小场击球中每个球击球前脚下不多于2步。
 * 上步击球重心要上到前脚（左脚）上。遇到困难时，减小上步步伐、缩小引拍侧身幅度、流畅动作都有助于实现重心前移。
 
-### There's a horizontal rule below this.
+<!--### There's a horizontal rule below this.
 
 * * *
 
@@ -188,4 +188,4 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 
 ```
 The final element.
-```
+```-->
