@@ -1,47 +1,3 @@
-<!-----
-layout: default
----
-
-Text can be **bold**, _italic_, or ~~strikethrough~~.
-
-[Link to another page](./another-page.html).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.-->
-
 ## 2022-04-22 上午8.00-9.30
 ###### 教学目标：
 1. 巩固原地和小范围移动中的反手（单手）上步击球技术。
@@ -51,7 +7,7 @@ end
 |:--|:--|:--|:--|
 | 热身 | 小泽热身操 | 5 min | -- |
 | 技术纠正 | 理解反手（单手）技术中`延伸至触球点时前肘应远离身体`及`最佳击球点位于球网45度方向，也就是说在球网与侧面挡网之间的平分线上` | 10 min | -- |
-| 反手击球（单手） | 环节一：上步击原地手抛球；环节二：站在发球线T点，上步击打慢速手抛高抛来球 | 15 min | A+ |
+| 反手击球（单手） | 环节一：上步击原地手抛球；环节二：站在发球线T点，上步击打慢速手抛高抛来球 | 15 min | <font color = "crimson">A+</font> |
 | 反手击球（单手） | 环节三：站在发球线后，上步击打切送来球   | 15 min  | A | 
 | 回合球：`正反手交替` | 送出的第一颗球用反手，听口令轮换：`小场`、`上旋球` | 25 min | B | 
 
@@ -60,8 +16,8 @@ end
 * 对于
 	1. `磕球（轻微下旋）`
 	2. `上旋球`
-	3. `切削球（强烈下旋）`三种送球方式的区别，需要花更多时间理解和体会。应结合训练视频录像，逐帧分析了解不同旋转球各自的球速特征。旋转球的其他方面特征尚不需要研究过深。
-* 还需进一步加强自主判断、并以简短干脆的口令做出评价的意识。务必在击打完成后喊出`对`、`错`这样的明确信号，结合教练员反馈方可事半功倍。
+	3. `切削球（强烈下旋）`三种送球方式的区别，需要花更多时间理解和体会。应结合训练视频录像，逐帧分析了解不同旋转球各自的球速特征。旋转球的其他方面特征尚不需要研究过深。<font color = "crimson">
+* **还需进一步加强自主判断、并以简短干脆的口令做出评价的意识。务必在击打完成后喊出<font color = black>`对`、`错`</font>这样的明确信号，结合教练员反馈方可事半功倍。</font>**
 
 ## 2022-04-20 上午8.00-10.00
 ###### 教学目标：
@@ -76,12 +32,13 @@ end
 | 反手击球（单手） | 环节〇：原地空挥拍；环节一：上步击原地手抛球 | 10 min | -- |
 | 反手击球（单手）| 环节二：站在发球线T点，上步击打慢速手抛高抛来球 | 10 min | -- |
 | 技术纠正| 理解反手（单手）技术中`延伸至触球点时前肘应远离身体`及`击球点应位于腰部与肩部之间` | 20 min | -- |
-| 回合球：`正手` | 目标：连续打50回合不掉球 | 5 min | A：14回合（28拍） |
+| 回合球：`正手` | 目标：连续打50回合不掉球 | 5 min | <font color = "#66ccff">A：**14回合（28拍）**</font> |
 | 回合球：`正反手交替` | 送出的第一颗球用正手，而后用反手，听口令轮换：`小场` | 25 min | A | 
-| 回合球II | `发球线后 3m` 送球角度加大，需要更多的脚步移动击球 | 10 min | A+ |
-| 回合球：`底线` | 体验底线附近的上步击球 | 5 min | A |
+| 回合球II | `发球线后 3m` 送球角度加大，需要更多的脚步移动击球 | 10 min | <font color = "crimson">A+</font> |
+| 回合球：`底线` | 体验底线附近的上步击球 | 5 min | A | <font color = "green">
 
 ###### 小结：
+</font>
 * 多回合小场对拉进步明显。现阶段需有意识地通过正手稳住回球质量，腾挪出时间、空间锻炼反手击球技术。
 * 逐渐熟悉前一个小时寻找手感的方式方法以及进度节奏。
 * 下次起应自己为训练做小结。小结请注意从两个方面着重把握。
