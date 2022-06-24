@@ -1,0 +1,9 @@
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+
+title: 球员Mi#4362 的网球学习历程
+description: 自2022年6月23日起，记录每次的网球技术/体能/战术/心理等层面教学内容、目标完成情况、球员反馈以及留待思考和解决的问题。无限期更新。
+
+show_downloads: true
+google_analytics: [Your Google Analytics tracking ID]
